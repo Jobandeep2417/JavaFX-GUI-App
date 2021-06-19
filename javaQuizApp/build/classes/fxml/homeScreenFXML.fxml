@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeScreenFXMLController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="607.0" text="JAVA QUIZ APP" textFill="#c72aa3">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="166.0" prefWidth="600.0">
+         <children>
+            <JFXTextField fx:id="plyrName" alignment="CENTER" opacity="0.5" prefHeight="25.0" prefWidth="442.0" promptText="Enter Player Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="225.0" text="Gender">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="radioBtnMale" text="MALE">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="radioBtnFemale" text="FEMALE" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <JFXComboBox fx:id="astroSignList" focusColor="WHITE" labelFloat="true" promptText="Choose a Astrological Sign" style="-fx-background-color: #5bc0de;" unFocusColor="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="607.0">
+         <children>
+            <JFXButton fx:id="nextBtn" buttonType="RAISED" onAction="#nextBtnClicked" prefHeight="25.0" prefWidth="189.0" ripplerFill="BLACK" style="-fx-background-color: #5cb85c;" text="NEXT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="errorLabel" alignment="CENTER_RIGHT" contentDisplay="CENTER" textFill="#ff0606">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="215.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
